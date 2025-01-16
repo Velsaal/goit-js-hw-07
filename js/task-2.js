@@ -24,15 +24,15 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
-const galleryEl = document.querySelector(".gallery");
+const galleryElement = document.querySelector(".gallery");
 
 
 const galleryMarkup = images
   .map(
     ({ url, alt }) =>
-      `<li><img src="${url}" alt="${alt}" loading="lazy"></li>`
+      `<li><img src="${url}" alt="${alt}"></li>`
   )
   .join("");
 
 
-galleryEl.insertAdjacentHTML("beforeend", galleryMarkup);
+galleryElement.insertAdjacentHTML("beforeend", galleryMarkup);
